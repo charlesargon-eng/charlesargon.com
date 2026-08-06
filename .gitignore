@@ -1,0 +1,12 @@
+# Local preview harnesses — not part of the published site.
+_devharness.html
+_zhharness.html
+_*.html
+
+# OS clutter
+Thumbs.db
+desktop.ini
+.DS_Store
+
+# Typeface trial assets — not part of the published site.
+_try/

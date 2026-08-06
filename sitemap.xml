@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <url>
+    <loc>https://charlesargon.com/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://charlesargon.com/"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://charlesargon.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://charlesargon.com/"/>
+    <lastmod>2026-08-04</lastmod>
+    <priority>1.0</priority>
+  </url>
+
+  <url>
+    <loc>https://charlesargon.com/research.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://charlesargon.com/research.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://charlesargon.com/zh/research.html"/>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.8</priority>
+  </url>
+
+  <url>
+    <loc>https://charlesargon.com/teaching.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://charlesargon.com/teaching.html"/>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://charlesargon.com/zh/teaching.html"/>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://charlesargon.com/zh/</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://charlesargon.com/zh/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://charlesargon.com/"/>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://charlesargon.com/zh/research.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://charlesargon.com/zh/research.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://charlesargon.com/research.html"/>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.7</priority>
+  </url>
+
+  <url>
+    <loc>https://charlesargon.com/zh/teaching.html</loc>
+    <xhtml:link rel="alternate" hreflang="zh-Hans" href="https://charlesargon.com/zh/teaching.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://charlesargon.com/teaching.html"/>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://charlesargon.com/yan-siqi-cv-zh.pdf</loc>
+    <lastmod>2026-08-05</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+  <url>
+    <loc>https://charlesargon.com/charles-argon-cv.pdf</loc>
+    <lastmod>2026-08-04</lastmod>
+    <priority>0.6</priority>
+  </url>
+
+</urlset>

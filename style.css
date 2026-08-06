@@ -1,0 +1,546 @@
+/* charlesargon.com — minimalist academic site
+   Fonts are self-hosted, never loaded from a CDN, so the site is fast and fully
+   functional in China. Source Serif 4 (Latin) and Noto Serif SC (Chinese) are a
+   designed pair: Noto Serif CJK's Latin glyphs are Source Serif, so a sentence
+   mixing 清代 and "Princeton" keeps one consistent design. Rebuild the subsets
+   with build-fonts.py after adding new Chinese characters. Both are SIL OFL. */
+
+/* --- Source Serif 4: Latin, Greek, Cyrillic-free subset --- */
+@font-face {
+  font-family: "Source Serif 4";
+  src: url("/fonts/source-serif-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+                 U+02DC, U+0300-036F, U+2000-206F, U+2074, U+20AC, U+2122,
+                 U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Source Serif 4";
+  src: url("/fonts/source-serif-600.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+                 U+02DC, U+0300-036F, U+2000-206F, U+2074, U+20AC, U+2122,
+                 U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Source Serif 4";
+  src: url("/fonts/source-serif-italic-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+                 U+02DC, U+0300-036F, U+2000-206F, U+2074, U+20AC, U+2122,
+                 U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* --- Fraunces: display only, for the name and section headings --- */
+@font-face {
+  font-family: "Fraunces Display";
+  src: url("/fonts/fraunces-display.woff2") format("woff2");
+  font-weight: 400 700;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+                 U+02DC, U+0300-036F, U+2000-206F, U+2074, U+20AC, U+2122,
+                 U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* --- Noto Serif SC: only the Han characters this site uses --- */
+@font-face {
+  font-family: "Noto Serif SC Subset";
+  src: url("/fonts/noto-serif-sc-400.woff2") format("woff2");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+2E80-9FFF, U+3000-303F, U+F900-FAFF, U+FE30-FE4F, U+FF00-FFEF;
+}
+@font-face {
+  font-family: "Noto Serif SC Subset";
+  src: url("/fonts/noto-serif-sc-600.woff2") format("woff2");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+2E80-9FFF, U+3000-303F, U+F900-FAFF, U+FE30-FE4F, U+FF00-FFEF;
+}
+
+:root {
+  /* One family for the whole site. System faces remain as fallbacks so the page
+     is fully readable even if a font file fails to load. */
+  --serif: "Source Serif 4", "Noto Serif SC Subset",
+           "Iowan Old Style", "Palatino Linotype", Palatino, Georgia,
+           "Songti SC", "Source Han Serif SC", "Noto Serif CJK SC",
+           "Microsoft YaHei", SimSun, serif;
+  /* Small UI text (navigation, labels, captions) uses the same family. Kept as
+     its own variable so it can be swapped for a sans in one place later. */
+  --ui: var(--serif);
+  /* Display face for the name and section headings. Latin only — Han falls
+     through to Noto Serif SC, which is deliberate. */
+  --display: "Fraunces Display", "Noto Serif SC Subset",
+             "Iowan Old Style", Georgia, "Songti SC", "Source Han Serif SC",
+             SimSun, serif;
+
+  --bg: #fdfcfa;
+  --bg-subtle: #f4f2ee;
+  --text: #1c1b19;
+  --text-muted: #5f5b54;
+  --rule: #ddd9d2;
+  --accent: #3f5470;
+  --accent-hover: #26374d;
+
+  --measure: 40rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #16181c;
+    --bg-subtle: #1e2126;
+    --text: #e7e4de;
+    --text-muted: #a09a91;
+    --rule: #32363c;
+    --accent: #9db6d6;
+    --accent-hover: #c2d4ea;
+  }
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--serif);
+  font-size: 1.0625rem;
+  line-height: 1.62;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Body text stays at 17px on desktop rather than growing to 18px. The size
+   difference between body and headings is what carries the hierarchy; bumping
+   the body flattens it again. */
+@media (min-width: 40em) {
+  html[lang="zh-Hans"] body { font-size: 1.125rem; }
+}
+
+/* Chinese pages: Han characters need more leading than Latin text, and Chinese
+   type has no italic, so italics are disabled on Chinese passages. Latin words
+   inside a Chinese sentence are served by Source Serif via unicode-range, which
+   is why mixed text stays visually consistent. */
+html[lang="zh-Hans"] body { line-height: 1.95; }
+html[lang="zh-Hans"] .role { font-size: 0.875rem; line-height: 1.7; }
+html[lang="zh-Hans"] .bib > li,
+html[lang="zh-Hans"] .talks > li { line-height: 1.8; }
+html[lang="zh-Hans"] em:not([lang]) { font-style: normal; }
+
+/* ---------- Layout ---------- */
+
+.wrap {
+  max-width: var(--measure);
+  margin: 0 auto;
+  padding: 2.5rem 1.375rem 4rem;
+}
+
+@media (min-width: 40em) {
+  .wrap { padding: 4.5rem 2rem 6rem; }
+}
+
+.skip { position: absolute; left: -9999px; }
+.skip:focus {
+  left: 1rem;
+  top: 1rem;
+  z-index: 10;
+  padding: 0.5rem 0.75rem;
+  background: var(--bg);
+  border: 1px solid var(--accent);
+  border-radius: 3px;
+}
+
+/* ---------- Masthead ---------- */
+
+.masthead { margin-bottom: 2.75rem; }
+
+.masthead h1,
+.masthead .sitename {
+  font-family: var(--display);
+  font-size: 2.125rem;
+  font-weight: 500;
+  letter-spacing: -0.015em;
+  line-height: 1.1;
+  margin: 0 0 0.5rem;
+}
+
+@media (min-width: 40em) {
+  .masthead h1,
+  .masthead .sitename { font-size: 3rem; letter-spacing: -0.02em; }
+}
+
+/* Han has no wonky cut to borrow, so the Chinese name wants a touch less size
+   and no negative tracking. */
+html[lang="zh-Hans"] .masthead h1,
+html[lang="zh-Hans"] .masthead .sitename { letter-spacing: 0; }
+
+@media (min-width: 40em) {
+  html[lang="zh-Hans"] .masthead h1,
+  html[lang="zh-Hans"] .masthead .sitename { font-size: 2.625rem; }
+}
+
+.masthead .sitename a {
+  color: var(--text);
+  text-decoration: none;
+  border: 0;
+}
+.masthead .sitename a:hover { color: var(--accent); }
+
+.cjk-name {
+  font-size: 0.62em;
+  font-weight: 400;
+  color: var(--text-muted);
+  margin-left: 0.45rem;
+  white-space: nowrap;
+}
+/* On the Chinese pages the Latin name is the secondary one. */
+html[lang="zh-Hans"] .cjk-name { font-size: 0.72em; }
+
+.role {
+  font-family: var(--ui);
+  font-size: 0.8125rem;
+  line-height: 1.55;
+  color: var(--text-muted);
+  margin: 0 0 1.6rem;
+}
+
+/* ---------- Navigation ---------- */
+
+/* Deliberately not letterspaced small caps. That treatment is the single most
+   template-looking thing a minimal site can do; plain sentence case at a
+   readable size sits better under a display masthead. */
+nav {
+  font-family: var(--ui);
+  font-size: 0.9375rem;
+  padding-top: 0.95rem;
+  border-top: 1px solid var(--rule);
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem 1.5rem;
+}
+
+nav a {
+  color: var(--text-muted);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 2px;
+}
+nav a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+nav a[aria-current="page"] { color: var(--text); border-bottom-color: var(--rule); }
+
+/* ---------- Side bands ----------
+   Left: a detail from a bamboo hanging scroll. Right: a leaf from a Qing
+   baojia household register. Both are decorative, so they are aria-hidden in
+   the markup and never sit under the text column: they appear only where the
+   centred column leaves margin beside it. */
+
+.sideband,
+.sideband-right {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  /* Never wider than the empty margin beside the centred text column, so the
+     bands shrink with the window instead of vanishing at a fixed breakpoint. */
+  width: min(210px, calc((100vw - var(--measure)) / 2 - 1.25rem));
+  background-size: cover;
+  opacity: 0.95;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.sideband {
+  left: 0;
+  background-image: url("/bamboo.jpg");
+  background-position: center top;
+}
+
+.sideband-right {
+  right: 0;
+  background-image: url("/register.jpg");
+  /* The leaf is much wider than the band, so anchor its right-hand edge: that
+     keeps the opening columns and the red seal inside the frame. */
+  background-position: right top;
+}
+
+.wrap { position: relative; z-index: 1; }
+
+/* Below this the margin is too thin for a band to read as anything. */
+@media (max-width: 57.99em) {
+  .sideband,
+  .sideband-right { display: none; }
+}
+
+@media (prefers-color-scheme: dark) {
+  .sideband,
+  .sideband-right { filter: brightness(0.42) contrast(1.05); }
+}
+
+/* ---------- Portrait ---------- */
+
+.portrait {
+  display: block;
+  width: 11.5rem;
+  height: auto;
+  max-width: 60%;
+  border-radius: 2px;
+  margin: 0 0 1.5rem;
+}
+
+/* On anything wider than a phone the portrait floats and the text wraps around
+   it, its top flush with the first line of the opening paragraph. */
+@media (min-width: 34em) {
+  .portrait {
+    float: left;
+    width: 10.5rem;
+    margin: 0.35rem 1.5rem 0.9rem 0;
+  }
+  /* Headings after the bio start a clean line rather than wrapping beside it. */
+  main h2 { clear: left; }
+}
+
+/* ---------- Full-column photograph ---------- */
+
+.wide {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  margin: 2rem 0 2.25rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  .wide { filter: brightness(0.88); }
+}
+
+/* ---------- Typography ---------- */
+
+/* The page title is a locator, not a headline — the masthead and the lead do
+   the announcing. Setting it small and quiet leaves the section headings free
+   to be the largest thing in the text column. */
+h1.pagetitle {
+  font-family: var(--ui);
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  line-height: 1.3;
+  margin: 0 0 1.3rem;
+}
+
+html[lang="zh-Hans"] h1.pagetitle { font-size: 0.875rem; letter-spacing: 0.22em; }
+
+h2 {
+  font-family: var(--display);
+  font-size: 1.5rem;
+  font-weight: 400;
+  line-height: 1.25;
+  margin: 2.4rem 0 0.7rem;
+}
+
+html[lang="zh-Hans"] h2 { font-size: 1.375rem; line-height: 1.5; }
+
+/* Small-caps section label, used for bibliography and course groupings. */
+.label {
+  font-family: var(--ui);
+  font-size: 0.75rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  margin: 2rem 0 0.875rem;
+}
+
+h2 + .label { margin-top: 1.5rem; }
+.pagetitle + .label { margin-top: 1.75rem; }
+
+p { margin: 0 0 1.15rem; }
+
+/* A real drop-in, not body text plus 6%. */
+.lead { font-size: 1.3125rem; line-height: 1.5; }
+html[lang="zh-Hans"] .lead { font-size: 1.1875rem; line-height: 1.8; }
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid color-mix(in srgb, var(--accent) 35%, transparent);
+  transition: color 0.12s ease, border-color 0.12s ease;
+}
+a:hover { color: var(--accent-hover); border-bottom-color: var(--accent-hover); }
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+em, i { font-style: italic; }
+strong { font-weight: 600; }
+
+.zh { font-size: 0.95em; }
+.nowrap { white-space: nowrap; }
+
+/* ---------- Lists ---------- */
+
+ul.plain {
+  list-style: none;
+  margin: 0 0 1.15rem;
+  padding: 0;
+}
+
+ul.plain > li { margin-bottom: 0.35rem; }
+
+/* Bibliography entries, with a hanging indent. */
+.bib {
+  list-style: none;
+  margin: 0 0 1.75rem;
+  padding: 0;
+}
+
+.bib > li {
+  margin: 0 0 1.25rem;
+  padding-left: 1.5rem;
+  text-indent: -1.5rem;
+}
+
+.bib .meta {
+  display: block;
+  text-indent: 0;
+  padding-left: 0;
+  font-family: var(--ui);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 0.2rem;
+}
+
+.bib .meta a { border-bottom-color: transparent; }
+.bib .meta a:hover { border-bottom-color: var(--accent-hover); }
+
+.talks {
+  list-style: none;
+  margin: 0 0 1.5rem;
+  padding: 0;
+  font-size: 0.9375em;
+}
+.talks > li {
+  margin: 0 0 0.7rem;
+  padding-left: 1.5rem;
+  text-indent: -1.5rem;
+}
+.talks .where { color: var(--text-muted); }
+
+/* Course list */
+.courses {
+  list-style: none;
+  margin: 0 0 1.75rem;
+  padding: 0;
+}
+.courses > li {
+  margin: 0 0 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid var(--rule);
+}
+.courses > li:last-child { border-bottom: 0; }
+.courses .ctitle { display: block; }
+.courses .cmeta {
+  display: block;
+  font-family: var(--ui);
+  font-size: 0.78rem;
+  color: var(--text-muted);
+  margin-top: 0.15rem;
+}
+
+/* ---------- Contact / details block ---------- */
+
+.details {
+  margin: 0 0 1.15rem;
+  font-family: var(--ui);
+  font-size: 0.9375rem;
+}
+
+.details div {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 0.6rem;
+  padding: 0.4rem 0;
+  border-bottom: 1px solid var(--rule);
+}
+.details div:first-child { border-top: 1px solid var(--rule); }
+
+.details dt {
+  flex: 0 0 5.5rem;
+  color: var(--text-muted);
+  font-size: 0.8125rem;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  padding-top: 0.15rem;
+}
+
+.details dd {
+  flex: 1 1 12rem;
+  margin: 0;
+}
+
+/* ---------- CV button ---------- */
+
+.cv-link {
+  display: inline-block;
+  font-family: var(--ui);
+  font-size: 0.875rem;
+  padding: 0.55rem 1rem;
+  margin: 0.25rem 0 1.5rem;
+  background: var(--bg-subtle);
+  border: 1px solid var(--rule);
+  border-radius: 4px;
+  color: var(--text);
+}
+.cv-link:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+  background: var(--bg-subtle);
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+  margin-top: 4rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid var(--rule);
+  font-family: var(--ui);
+  font-size: 0.8125rem;
+  color: var(--text-muted);
+}
+
+footer p { margin: 0 0 0.4rem; }
+footer a { color: var(--text-muted); border-bottom-color: var(--rule); }
+footer a:hover { color: var(--accent); }
+
+/* ---------- Print ---------- */
+
+@media print {
+  :root { --bg: #fff; --text: #000; --text-muted: #444; --accent: #000; }
+  nav, .cv-link, .skip, .portrait, .sideband, .sideband-right { display: none; }
+  .wrap { max-width: none; padding: 0; }
+  a { border: 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { transition: none !important; }
+}
