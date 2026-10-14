@@ -20,9 +20,16 @@ I hold a Ph.D. in History from Princeton University, an M.A. in Chinese History 
 University, and an A.B. in East Asian Studies from Princeton. Before graduate school I spent a
 year at Zhejiang University as a Fulbright Scholar, and I have since spent time as a visitor at
 the Institute for Advanced Studies on Asia at the University of Tokyo and Tsinghua University.
+My year of dissertation research in China was funded by the Huo Family Foundation, which
+published a conversation with me
+<https://huofamilyfoundation.org/news/in-conversation-with/charlie-argon/> about how I came to
+the field. I have also worked as a research assistant to Linda Colley on The Gun, the Ship, and
+the Pen, and to Janet Chen on the fourth edition of The Search for Modern China.
 
-I welcome inquiries about collaboration, invited talks, and visiting research, and I am glad to
-hear from prospective students working on Qing political or administrative history.
+I welcome inquiries from students, especially those interested in Qing politics. I also welcome
+inquiries from prospective research assistants, especially those with strong Classical Chinese
+and/or quantitative skills. Inquiries about collaboration, invited talks, and visiting research
+can go to the same address.
 
 ### Contact
 
@@ -50,10 +57,10 @@ them are in preparation.
 My first book, developed from my dissertation, takes up baojia, the Qing framework for
 registering households and organizing neighborhoods for mutual responsibility and local
 security. Standard accounts treat it as an institution in slow decline. I read it instead as a
-contest, in which emperors, officials, local elites, and ordinary households pressed on the
-question of who belonged to a political community and on what terms. A case study of Jiangxi
-anchors the argument. The work draws on state archives and documents, legal cases, local
-gazetteers, and diverse literary sources and private writings.
+political tradition, in which emperors, officials, local elites, and ordinary households pressed
+on the question of who belonged to a political community and on what terms. A case study of
+Jiangxi anchors the argument. The work draws on state archives and documents, legal cases, local
+gazetteers, literary sources and private writings.
 
 ### The lives of ideas in the Qing state
 
@@ -139,6 +146,16 @@ present. Across my courses the aim is the same: to get students thinking careful
 past, whether by reading a document closely, weighing evidence, or pursuing their own research
 questions.
 
+### Courses in preparation
+
+The History of Chinese Food Undergraduate seminar, taught in English
+
+Western Scholarship on the Qing Dynasty Undergraduate lecture course, taught in Chinese
+
+Writing Your Journal Article with AI Graduate seminar, taught in Chinese
+
+Early Modern Empire Graduate seminar, taught in Chinese
+
 ### Previous teaching
 
 The United States Since 1974 Teaching assistant, Princeton University, Spring 2024
@@ -153,21 +170,21 @@ My students have published research in The Concord Review and been admitted to P
 Harvard, Stanford, New York University, and George Washington University, among other
 universities.
 
-I am glad to hear from students interested in Qing political or administrative history. A full
-record of courses and mentoring is in the CV <https://charlesargon.com/charles-argon-cv.pdf>.
+A full record of courses and mentoring is in the CV
+<https://charlesargon.com/charles-argon-cv.pdf>.
 
 ================================================================================================
 PAGE: 简介 (Profile, Chinese) — https://charlesargon.com/zh/
 ================================================================================================
 
-严思齐（Charles
-Argon），普林斯顿大学历史学博士。他的研究以清代（1644—1912）政治史和行政史为主，同时关注比较视野下的帝国问题，重点在于治国的想法如何在朝廷、督抚和州县之间传递，又如何在具体行政中
-被执行、变通甚至落空。他使用五种语言的材料，并结合量化方法。
+我是严思齐（Charles
+Argon），中国人民大学清史研究所讲师。我的研究以清代（1644—1912）政治史和行政史为主，同时关注比较视野下的国家问题，重点在于治国的想法如何在朝廷、督抚和州县之间传递，又如何在具体行
+政中被执行、变通甚至落空。我使用五种语言的材料，并结合量化方法。
 
-他在普林斯顿大学获得历史学博士学位，在清华大学获得中国史硕士学位，本科毕业于普林斯顿大学东亚研究系。读博之前曾作为富布莱特学者在浙江大学访学，之后又先后在东京大学东洋文化研究所和清华大学做访问
-研究。
+我在普林斯顿大学获得历史学博士学位，在清华大学获得中国史硕士学位，本科毕业于普林斯顿大学东亚研究系。读博之前曾作为富布莱特学者在浙江大学访学，之后又先后在东京大学东洋文化研究所和清华大学做访问
+研究。我还曾担任琳达·科利《枪、船、笔：战争、宪法与现代世界的兴起》一书的研究助理，并协助陈怡君修订史景迁《追寻现代中国》（第4版）。
 
-欢迎就学术合作、讲座邀请和访问研究通过下面的邮箱联系。对清代政治史、行政史有兴趣的同学，也欢迎来信。
+对清代政治有兴趣的同学，欢迎来信。有意担任研究助理的同学也欢迎联系，尤其是文言文基础扎实或具备量化分析能力的同学。学术合作、讲座邀请与访问研究，也可通过下面的邮箱联系。
 
 ### 联系方式
 
@@ -186,24 +203,24 @@ PAGE: 研究 (Research, Chinese) — https://charlesargon.com/zh/research.html
 
 ## 研究
 
-他的研究以清代为中心，同时关注比较视野下的帝国问题。贯穿这些方向的问题是：治国的想法如何从京城经过省会传到州县，传到的时候又变成了什么样子。以下三个方向构成他目前工作的主体，若干论文正在撰写中
+我的研究以清代为中心，同时关注比较视野下的国家问题。贯穿这些方向的问题是：治国的想法如何从京城经过省会传到州县，传到的时候又变成了什么样子。以下三个方向构成我目前工作的主体，若干论文正在撰写中
 。
 
 ### 保甲与政治共同体的边界
 
-他的第一部专著由博士论文扩展而成，讨论清代的保甲——编查户口、联保联坐和地方治安的制度框架。以往研究大多把它看作一项逐渐废弛的制度；这本书则把它读作一场持续的争夺：皇帝、官员、地方士绅和普通民
-户都在用各自的方式追问，谁属于政治共同体，又在什么条件下属于它。全书以江西为个案，使用的材料包括中央和地方档案、政书、刑案文书、地方志，以及各类文集和私人著述。
+我的第一部专著由博士论文扩展而成，讨论清代的保甲——编查户口、联保联坐和地方治安的制度框架。以往研究大多把它看作一项逐渐废弛的制度；这本书则把它读作一种政治传统：皇帝、官员、地方士绅和普通民户
+都在用各自的方式追问，谁属于政治共同体，又在什么条件下属于它。全书以江西为个案，使用的材料包括中央和地方档案、政书、刑案文书、地方志，以及各类文集和私人著述。
 
 ### 清代的行政知识与经世之学
 
 第二个方向关注官员实际依靠的知识。官箴书、文集和经世文编构成了一套关于如何为官的实务文献：如何管理属吏，如何查核册籍，如何主持编查，如何治理一个从来没有去过的地方。这项研究想弄清这批文献是怎样
-编排组织起来的，在清代如何演变，又在多大程度上影响了官员的实际作为。他关于戴肇辰的论文是这个方向已经发表的入口：戴氏在同治年间先后担任山东、广东知府，这篇文章既是一位官僚的思想传记，也考察经世
+编排组织起来的，在清代如何演变，又在多大程度上影响了官员的实际作为。我关于戴肇辰的论文是这个方向已经发表的入口：戴氏在同治年间先后担任山东、广东知府，这篇文章既是一位官僚的思想传记，也考察经世
 之学进入执行环节以后是什么样子。
 
 ### 量化史学与数据
 
 对清代治理的研究引出一个更大的问题：历史学者应该怎样使用数据。清代基层治理留下的记录，大多是篇幅长、格式重复的成系列文书：地契、册籍、章程、书目。单件文书能提供的信息有限，但把它们放在一起，就
-可以回答关于分布、差异和变迁的问题，而这类问题只靠细读少数个案是无法回答的。用这类文书建立数据集本身也有难题：怎样转录和编码，存世和刊布带来了什么偏差，统计结果又该怎样呈现。严思齐是
+可以回答关于分布、差异和变迁的问题，而这类问题只靠细读少数个案是无法回答的。用这类文书建立数据集本身也有难题：怎样转录和编码，存世和刊布带来了什么偏差，统计结果又该怎样呈现。我是
 HistBench 与 HistAgent（多模态历史推理的评测集与智能体）的合作作者之一，2024—2025年在普林斯顿大学共同组织了“人工智能与历史”工作坊。
 
 ### 论文发表
@@ -256,7 +273,17 @@ PAGE: 教学 (Teaching, Chinese) — https://charlesargon.com/zh/teaching.html
 
 ## 教学
 
-反复与过去打交道，既能培养同理心，也能让人和当下保持一定的距离。他的每一门课目标都一样：训练学生认真地思考过去——细读一份文献，辨别证据，或者推进自己的研究课题。
+我认为，反复与过去打交道，既能培养同理心，也能让人和当下保持一定的距离。我的教学目标是训练学生认真地思考过去——细读一份文献，辨别证据，或者推进自己的研究课题。
+
+### 拟开设课程
+
+中国食物史 本科生研讨课，英文授课
+
+海外清史研究 本科生课程，中文授课
+
+人工智能辅助的学术论文写作 研究生研讨课，中文授课
+
+近代早期的国家形态 研究生研讨课，中文授课
 
 ### 教学经历
 
@@ -266,13 +293,16 @@ The United States Since 1974 助教，普林斯顿大学，2024年春季学期
 
 写作指导 普林斯顿大学写作中心导师、Petey Greene 计划辅导员，2015—2017年
 
-他指导的学生曾在 The Concord Review 发表研究论文，并先后升入普林斯顿大学、哈佛大学、斯坦福大学、纽约大学与乔治·华盛顿大学等校。
+我指导的学生曾在 The Concord Review 发表研究论文，并先后升入普林斯顿大学、哈佛大学、斯坦福大学、纽约大学与乔治·华盛顿大学等校。
 
-对清代政治史、行政史有兴趣的同学，欢迎联系。完整的授课和指导记录见简历 <https://charlesargon.com/yan-siqi-cv-zh.pdf>。
+完整的授课和指导记录见简历 <https://charlesargon.com/yan-siqi-cv-zh.pdf>。
 
 ================================================================================================
 EDUCATION AND POSITIONS
 ================================================================================================
+
+Assistant Professor (讲师), Institute of Qing History (清史研究所), Renmin University of China,
+Beijing. Institute website: http://iqh.ruc.edu.cn/
 
 Ph.D., History, Princeton University, 2026
   Dissertation: "Baojia: A Policy for Household Registration and Community Policing in Qing

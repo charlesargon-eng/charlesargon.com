@@ -10,3 +10,6 @@ desktop.ini
 
 # Typeface trial assets — not part of the published site.
 _try/
+
+# Build scripts live inside this folder but are not part of the published site.
+*.py
